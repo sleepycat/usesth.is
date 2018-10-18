@@ -1,13 +1,16 @@
+---
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: web
+  annotations:
+    flux.weave.works/automated: 'true'
 spec:
   replicas: 1
   strategy: {}
   template:
     metadata:
-      creationTimestamp: null
+      creationTimestamp:
       labels:
         app: web
         io.kompose.service: web
