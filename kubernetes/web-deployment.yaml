@@ -46,7 +46,7 @@ spec:
             secretKeyRef:
               key: USESTHIS_PRODUCTION_DB_URL
               name: usesthis-secrets
-        image: mikewilliamson/usesthis:latest
+        image: mikewilliamson/usesthis:1ce5d58021e96d7f97f479e174fa09ca54f8761f
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
