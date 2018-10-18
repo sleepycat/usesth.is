@@ -46,7 +46,7 @@ spec:
             secretKeyRef:
               key: USESTHIS_PRODUCTION_DB_URL
               name: usesthis-secrets
-        image: gcr.io/usesthis-211020/usesthis-web
+        image: gcr.io/usesthis-211020/usesthis-web:1d679b7
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
